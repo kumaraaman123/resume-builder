@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Static HTML-CSS-JavaScript Projects</title>
+
+    <!-- FontAwesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- custom js -->
+    <div class="form-container">
+      <form>
+        <div class="tittle">
+          <h2>Resume Builder</h2>
+        </div>
+        <input type="text" placeholder="Name" id="username" required />
+        <input
+          type="text"
+          placeholder="Title/Sub Heading"
+          id="userTitle"
+          required
+        />
+        <textarea
+          name="Work Experience"
+          cols="100%"
+          rows="1"
+          placeholder="Work Experience"
+          id="userExperience"
+          required
+        ></textarea>
+        <textarea
+          name="Academic Details"
+          cols="100"
+          rows="1"
+          placeholder="Academic Details"
+          id="userAcademicDetails"
+          required
+        ></textarea>
+        <input
+          type="text"
+          placeholder="Objective"
+          id="userObjective"
+          required
+        />
+        <textarea
+          name="Skills"
+          cols="100"
+          rows="1"
+          placeholder="Skills"
+          id="userSkills"
+          required
+        ></textarea>
+        <textarea
+          name="Projects"
+          cols="100"
+          rows="1"
+          placeholder="Projects"
+          id="userProjects"
+          required
+        ></textarea>
+        <textarea
+          name="Achievements"
+          cols="100"
+          rows="1"
+          placeholder="Achievements"
+          id="userAchievements"
+          required
+        ></textarea>
+        <textarea
+          name="Contact"
+          cols="100"
+          rows="1"
+          placeholder="Contact"
+          id="userContact"
+          required
+        ></textarea>
+        <button type="button" class="form-btn">
+          <a href="./resume.html">Generate / Edit</a>
+        </button>
+        <button type="button" class="form-btn" onclick="Delete()">
+          Delete
+        </button>
+      </form>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

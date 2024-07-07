@@ -1,0 +1,124 @@
+/* select a font */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --clr-sky-blue: #8ecae6ff;
+  --clr-blue-green: #219ebcff;
+  --clr-prussian-blue: #023047ff;
+  --clr-selective-yellow: #ffb703ff;
+  --clr-ut-orange: #fb8500ff;
+  --ff-roboto: 'Roboto', sans-serif;
+  --ff-noto-sans: 'Noto Sans', sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  --max-width: 1170px;
+  --fixed-width: 450px;
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  font-family: var(--ff-roboto);
+  overflow-x: hidden;
+}
+
+.resume-container {
+  max-width: 55rem;
+  width: 100%;
+  min-height: 50vh;
+  border: 2px solid #fff;
+  box-shadow: var(--light-shadow);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.resume-header {
+  width: 100%;
+  height: 5rem;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 0.75rem;
+}
+
+.resume-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.resume-data1,
+.resume-data2 {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1.5rem 0 1.5rem 2rem;
+}
+
+.resume-data1 {
+  width: 40%;
+  border-right: 2px dashed #000;
+}
+
+.resume-data2 {
+  width: 60%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem auto;
+}
+
+.objective {
+  width: 100%;
+}
+
+.data {
+  width: 80%;
+  min-height: 3.5rem;
+  word-wrap: break-word;
+  padding: 0.5rem;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.2rem 1rem;
+  cursor: pointer;
+  box-shadow: var(--dark-shadow);
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Static HTML-CSS-JavaScript Projects</title>
+
+    <!-- FontAwesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/resume.css" />
+  </head>
+  <body>
+    <div class="resume-container">
+      <div class="resume-header">
+        <h2 class="resume-name" id="name"></h2>
+        <h6 class="resume-subtitle" id="subtitle"></h6>
+      </div>
+      <div class="resume-content">
+        <div class="resume-data1">
+          <div class="objective">
+            <h3>Objective</h3>
+            <div class="data" id="objectiveData"></div>
+          </div>
+          <div class="skills">
+            <h3>Skills</h3>
+            <div class="data" id="skillsData"></div>
+          </div>
+          <div class="academic-details">
+            <h3>Academic Details</h3>
+            <div class="data" id="academicDetailsData"></div>
+          </div>
+          <div class="contact">
+            <h3>Contact</h3>
+            <div class="data" id="contactData"></div>
+          </div>
+        </div>
+        <div class="resume-data2">
+          <div class="work-experience">
+            <h3>Work Experience</h3>
+            <div class="data" id="workData"></div>
+          </div>
+          <div class="achievements">
+            <h3>Achievements</h3>
+            <div class="data" id="achievementsData"></div>
+          </div>
+          <div class="projects">
+            <h3>Projects</h3>
+            <div class="data" id="projectsData"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="toggleButton">
+      <a href="./index.html">Generate / Edit</a>
+    </button>
+    <button type="button" onclick="print()">Print</button>
+    <script src="./scripts/resume.js"></script>
+  </body>
+</html>
